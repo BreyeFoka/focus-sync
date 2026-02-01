@@ -1,0 +1,26 @@
+
+> project_web@0.1.0 lint
+> eslint
+
+
+C:\Users\blagl\Projects\project_web\src\components\focus\AmbientPlayer.tsx
+   33:22  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+   49:26  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+   56:26  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+   76:27  error    Error: Cannot call impure function during render
+
+`Math.random` is an impure function. Calling an impure function can produce unstable results that update unpredictably when the component happens to re-render. (https://react.dev/reference/rules/components-and-hooks-must-be-pure#components-and-hooks-must-be-idempotent).
+
+C:\Users\blagl\Projects\project_web\src\components\focus\AmbientPlayer.tsx:76:27
+  74 |
+  75 |         for (let i = 0; i < bufferSize; i++) {
+> 76 |             const white = Math.random() * 2 - 1;
+     |                           ^^^^^^^^^^^^^ Cannot call impure function
+  77 |
+  78 |             if (type === 'white') {
+  79 |                 output[i] = white;  react-hooks/purity
+  104:64  error    Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @typescript-eslint/no-explicit-any
+  113:22  warning  'e' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   @typescript-eslint/no-unused-vars
+
+Γ£û 6 problems (2 errors, 4 warnings)
+

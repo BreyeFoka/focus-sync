@@ -2,6 +2,7 @@
 
 import { FocusTimer } from "@/components/focus/FocusTimer";
 import { TaskList } from "@/components/tasks/TaskList";
+import { AmbientPlayer } from "@/components/focus/AmbientPlayer";
 
 export default function Home() {
   return (
@@ -21,14 +22,14 @@ export default function Home() {
         {/* Main Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
-          {/* Left Column: Timer */}
-          <section className="lg:col-span-7 flex flex-col items-center animate-in fade-in slide-in-from-left-4 duration-700 delay-150">
+          {/* Left Column: Timer & Audio */}
+          <section className="lg:col-span-7 flex flex-col items-center gap-6 animate-in fade-in slide-in-from-left-4 duration-700 delay-150">
             <div className="w-full bg-card/50 backdrop-blur-sm border border-border/50 rounded-3xl p-8 shadow-sm">
               <FocusTimer />
             </div>
 
-            <div className="mt-8 text-sm text-muted-foreground/60">
-              <p>Tip: Deep work happens in distraction-free zones.</p>
+            <div className="w-full max-w-sm bg-card/30 backdrop-blur-sm border border-border/30 rounded-2xl p-6">
+              <AmbientPlayer />
             </div>
           </section>
 
