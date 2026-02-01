@@ -1,0 +1,12 @@
+
+> project_web@0.1.0 lint
+> eslint
+
+
+C:\Users\blagl\Projects\project_web\src\components\focus\FocusTimer.tsx
+   5:10  warning  'Card' is defined but never used          @typescript-eslint/no-unused-vars
+   7:21  warning  'useState' is defined but never used      @typescript-eslint/no-unused-vars
+  11:52  error    Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+Γ£û 3 problems (1 error, 2 warnings)
+
