@@ -14,8 +14,8 @@ A Pomodoro focus app: a work/break timer, a task list for the session, and ambie
 ## Run it
 
 ```bash
-npm install
-npm run dev     # http://localhost:3000
+pnpm install
+pnpm dev     # http://localhost:3000
 ```
 
 ## Checks
